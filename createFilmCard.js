@@ -8,8 +8,8 @@ export function createFilmCard(filmDetails) {
   imageElement.src = filmDetails.image
 
   // Hook up/connect them together
-  card.append(titleElement)
   card.append(imageElement)
-
+  card.append(titleElement)
+  
   return card
 }
