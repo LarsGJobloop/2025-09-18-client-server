@@ -2,8 +2,8 @@ export function createFilmCard(filmDetails) {
   const wrapper = document.createElement("div")
   wrapper.innerHTML = `
     <li class="film-card">
+      <img class="film-card-image" src="${filmDetails.image}" alt="" />
       <p>${filmDetails.title}</p>
-      <img src="${filmDetails.image}" alt="" />
 
       <footer class="film-card-metadata">
         <p>${filmDetails.director}</p>
