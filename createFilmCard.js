@@ -1,11 +1,11 @@
 export function createFilmCard(filmDetails) {
   const wrapper = document.createElement("div")
   wrapper.innerHTML = `
-    <li>
+    <li class="film-card">
       <p>${filmDetails.title}</p>
       <img src="${filmDetails.image}" alt="" />
 
-      <footer>
+      <footer class="film-card-metadata">
         <p>${filmDetails.director}</p>
         <p>${filmDetails.producer}</p>
         <p>${filmDetails.release_date}</p>
