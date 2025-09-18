@@ -14,5 +14,14 @@ const response = await fetch(url)
 console.log(response)
 
 // Unpack the response
-const data = await response.json()
-console.log(data)
+const films = await response.json()
+console.log(films)
+
+const filmeListElement = document.querySelector("#film-list")
+
+for (const film of films) {
+  console.log(film)
+  const card = document.createElement("li")
+  card.textContent = film.title
+  filmeListElement.append(card)
+}
