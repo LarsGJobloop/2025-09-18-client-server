@@ -1,3 +1,5 @@
+import { createFilmCard } from "./createFilmCard.js"
+
 // Log that we are starting
 console.log("JavaScript loaded!")
 
@@ -21,7 +23,6 @@ const filmeListElement = document.querySelector("#film-list")
 
 for (const film of films) {
   console.log(film)
-  const card = document.createElement("li")
-  card.textContent = film.title
-  filmeListElement.append(card)
+  const filmCard = createFilmCard(film)
+  filmeListElement.append(filmCard)
 }
