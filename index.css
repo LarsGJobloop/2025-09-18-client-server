@@ -5,7 +5,28 @@ ul, ol {
   list-style-type: none;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+}
+
 /* Our custom styling starts here */
+body > header {
+  background-color: coral;
+  text-align: center;
+}
+
+body > main {
+  padding: 1rem;
+}
+
+body > footer   {
+  background-color: coral;
+  text-align: center;
+}
+
 #film-list {
   display: flex;
   flex-direction: column;
